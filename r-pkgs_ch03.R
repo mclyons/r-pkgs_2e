@@ -1,5 +1,9 @@
 # book says to install these
-install.packages(c("devtools", "roxygen2", "testthat", "knitr"))
+install.packages(c(
+  "devtools", "roxygen2",
+  "testthat",
+  "knitr"
+))
 
 # use use_devtools to set up .Rprofile properly
 library(devtools)
@@ -93,6 +97,21 @@ use_devtools()
 devtools::dev_sitrep() 
 
 
+# ── R ─────────────────────────────────────────────────────────────────────────────────
+# • version: 4.2.0
+# • path: '/usr/lib/R/'
+# • R is out of date (4.2.0 vs 4.2.2)
+# ── RStudio ───────────────────────────────────────────────────────────────────────────
+# • version: 2022.12.0.353
+# ── devtools ──────────────────────────────────────────────────────────────────────────
+# • version: 2.4.5
+# • devtools or its dependencies out of date:
+#  'curl', 'vctrs', 'crayon', 'ps', 'processx', 'pkgload', 'lifecycle', 'jsonlite', 'evaluate', 'digest', 'desc', 'yaml', 'highr', 'cpp11', 'stringr', 'purrr', 'commonmark', 'brew', 'pkgbuild', 'sass', 'tinytex', 'bslib', 'rmarkdown', 'htmltools', 'htmlwidgets', 'sys', 'openssl', 'whisker', 'fontawesome', 'httpuv', 'shiny', 'gitcreds', 'zip', 'gh', 'gert', 'rversions'
+# Update them with `devtools::update_packages("devtools")`
+# ── dev package ───────────────────────────────────────────────────────────────────────
+# • package: <unset>
+# • path: <unset>
 
+devtools::update_packages("devtools")
 
 
